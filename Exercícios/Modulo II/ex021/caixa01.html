@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*Elemento do tipo box-level*/
+            background-color: lightgray;
+
+            height: 300px;
+            width: 300px;
+
+            /*
+            border-width (espessura): 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            
+            Shorthand de border abaixo:
+            border: border-width border-style border-color
+            */
+            border: 10px solid darkslategray;
+
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;   
+            padding-left: 10px;
+
+            Shorthand de padding abaixo:
+            padding: padding-top padding-right padding-bottom padding-left;
+            Se você tiver o mesmo valor nos 4 atributos, como no exemplo acima, basta voc~e colocar apenas um valor que é o que deseja.
+            */
+
+            padding: 10px;
+
+            /*
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            
+            Shorhand de margin abaixo:
+            margin: margin-top margin-right margin-bottom margin-left;
+            Também há como você deixar com margin centralizado, basta você colocar 'auto', como - margin: auto; Isso, centraliza todas as direções. Mas também há como você centralizar direções específicas, como o exemplo abaixo:
+            
+            */
+
+            margin: 20px auto 40px auto;
+            
+            /*
+            outline-width (espessura): 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+            Shorthand de outline abaixo:
+            outline: outline-width outline-style outline-color;
+            */
+            
+            outline: 5px dashed salmon;
+        }
+
+        a { /*Elemento do tipo inline-level*/
+            border: 10px solid red;
+
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

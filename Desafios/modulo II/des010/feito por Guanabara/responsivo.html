@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 250px; /*Largura Mínima que o elemento vai ter, não ficará menos que isso. Todos esses dois atributos de 'min' e 'max' servem para deixar um site responsivo, pois a largura vai se adaptando automaticante enquanto o tamanho da tela for menor, ou seja, o main se adaptará dentre esses intervalos de valores.*/ 
+            max-width: 800px; /*Largura Maxíma que o elemento vai ter, independente da tela. Exemplo: Mesmo se a tela (viewport) for de 1800px, o main ainda terá 800 px, pois essa é a largura máxima imposta ao elemento*/ 
+            margin: auto; /*O valor auto no margin centraliza a tag, de acordo com a tag 'pai', nesse caso, o body.*/
+        }
+
+        img {
+            width: 100%; /*Com o width 100%, isso deixa a imagem com uma largura de 100% relativa a tag 'pai' 'mais próxima' que tiver um tamanho 'definido'. No exemplo desse doc, a imagem ficará com 100% relativa ao tamanho do main, ou seja, enquanto o main vai se adaptando a tela de acordo com o intervalo do min e max width, a tag img se adaptará ao tamanho do main. Por isso, a imagem vai se adaptando ao main para que não ultrapasse essa tag.*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ex quis suscipit tempore nostrum facilis dolore minima odio odit provident tempora incidunt tenetur quaerat reiciendis voluptatum sit aliquam, commodi consequatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore possimus atque adipisci, rerum unde voluptate, esse delectus nemo modi voluptas ad provident ducimus. Beatae dolores officiis error sit enim neque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim a deleniti totam ratione nisi fuga dicta molestiae officiis quasi illum, quos eum provident facilis cupiditate voluptates repellat, minima in voluptate!</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="../imagens/irina-blok-pq.jpg">
+            <img src="../imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum necessitatibus consectetur soluta porro atque expedita quidem iusto quos adipisci, natus dolores itaque temporibus quo, aut sint reprehenderit, quas delectus. Nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga minima doloremque tempore quis nesciunt. Ex explicabo nisi quae vel asperiores quo atque sunt. Aperiam molestiae nisi, est laudantium quibusdam voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam a totam quos quae commodi ea adipisci incidunt maxime aliquam sequi, inventore molestiae unde omnis voluptates nobis laboriosam? Distinctio, necessitatibus repellendus.</p>
+    </main>
+</body>
+</html>

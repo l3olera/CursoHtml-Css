@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        /*
+        h1 {
+            box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.311);
+        }
+        */
+        nav {
+            background-color: rgb(91, 91, 91);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+            /*box-shadow: (opcional - colocar 'inset' no começo, dai a sobra passa a ser interna ao invés de externa) deslocamento-horizontal deslocamento-vertical espalhamento (blur e alcance da sombra, respectivamente) cor-da-sombra*/
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;/*Raio da borda (Deixar as bordas de uma caixa mais curvadas*/
+            /*
+            Shorthand de border-radius
+
+            border-radius: border-top-left-radius (Topo esquerda) border-top-right-radius (topo direita) border-bottom-right-radius (baixo direita) border-top-left-radius (baixo esquerda);
+
+            Se é colocado dois valores apenas, ele coloca os valores, respectivamente, o primeiro valor para cima esquerda e baixo direita. O segundo para cima direita e baixo esquerda. Exemplo: border-radius: 10px 40px; 
+
+            Também é possível usar porcentagem como valor no border-radius.
+            */
+            box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 0.356); 
+            
+        }
+
+        article {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: rgb(145, 145, 145);
+            padding: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        /* 
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        */
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!--Navbar, ou seja, menu-->
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+        </nav>
+    </header>
+
+    <main> <!--Conteúdo principal-->
+        <section id="assuntos"> <!--Seção-->
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article> <!--Artigo-->
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, ad voluptates veritatis architecto vero deleniti laudantium quia ducimus quis sapiente cumque eveniet libero consequatur nobis ex sequi ratione ullam delectus.</p>
+                <aside> <!--Tag específico dentro do article-->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <footer> <!--Rodapé-->
+        <p>Desenovolvido pelo Leo</p>
+    </footer>
+
+    <!--
+    <div id="bola">
+
+    </div>
+    -->
+</body>
+</html>
